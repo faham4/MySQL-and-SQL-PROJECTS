@@ -1,8 +1,8 @@
-CREATE DATABASE my_db;
-USE my_db;
+CREATE DATABASE my_database;
+USE my_database;
 
 CREATE TABLE my_table (
-    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
     name VARCHAR(50),
     age INT,
     email VARCHAR(50),
@@ -11,7 +11,9 @@ CREATE TABLE my_table (
     gender CHAR(1),
     occupation VARCHAR(50)
 );
-SELECT * FROM my_table;
+
+
+ SELECT * FROM  my_table;
 
 INSERT INTO my_table (name, age, email, address, phone_number, gender, occupation)
 VALUES
@@ -40,7 +42,7 @@ DELETE FROM my_table WHERE id = 7;
 DROP TABLE my_table;
 
 CREATE TABLE my_table (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
     Name VARCHAR(50),
     age INT,
     email VARCHAR(50),
@@ -50,8 +52,6 @@ CREATE TABLE my_table (
     occupation VARCHAR(50)
 );
 
- SELECT * FROM my_table;
- 
 INSERT INTO my_table (name, age, email, address, phone_number, gender, occupation)
 VALUES
 ('John Doe', 28, 'john@example.com', '123 Elm St', '123-456-7890', 'M', 'Engineer'),
