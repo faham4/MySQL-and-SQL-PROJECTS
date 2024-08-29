@@ -18,7 +18,7 @@ INSERT INTO Student (Name,Age) VALUES ('Ahmed',23),
                                        ('Aziz',20),
                                        ('Ali',19);
                                        
- ALTER TABLE Student ADD COLUMN contact VARCHAR(11),ADD COLUMN faculity VARCHAR(23);    
+ ALTER TABLE Student ADD contact VARCHAR(11),ADD  faculity VARCHAR(23);    
                      
                      
 UPDATE Student SET faculity = 'Sir Mohsin'; 
@@ -45,7 +45,7 @@ INSERT INTO Employees (Name, Department, Salary) VALUES
     ('Aziz', 'Sales', 32150),
     ('Ali', 'Sales', 32150);
     
-SELECT SUM(Salary) As 'Total Salary' FROM Employees;
+SELECT  SUM(Salary) As 'Total Salary' FROM Employees;
 -- MAXIUM SALARY -- 
 SELECT MAX(Salary) As 'MAX SALARY' FROM Employees;
 -- Lowest salary --
@@ -64,6 +64,6 @@ SELECT * FROM Employees WHERE Department = 'Production';
 SELECT * FROM Employees WHERE Salary > 50000 AND Salary < 100000;
 
 
-SELECT * FROM Employees WHERE Salary >= 150000 OR Salary >= 160000;
+SELECT * FROM Employees WHERE Salary >= 150000;
  
                   
