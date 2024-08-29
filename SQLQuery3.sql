@@ -43,7 +43,7 @@ INSERT INTO Employees (Name, Department, Salary) VALUES
     ('Fakir', 'Production', 98000),
     ('Yasir', 'Marketing', 12500),
     ('Aziz', 'Sales', 32150),
-	('Ali', 'Sales', 32150);
+    ('Ali', 'Sales', 32150);
     
 SELECT SUM(Salary) As 'Total Salary' FROM Employees;
 -- MAXIUM SALARY -- 
@@ -55,25 +55,13 @@ SELECT COUNT(Salary) As ' Number of Employees with Salary' FROM Employees;
 
 
 
-SELECT 
-    *
-FROM
-    Employees
-WHERE
-    Salary > 100000;
+SELECT * FROM Employees WHERE Salary > 100000;
 
 -- Retrieve all employees working in the 'Production' department
-SELECT 
-    *
-FROM
-    Employees
-WHERE
-    Department = 'Production';
+SELECT * FROM Employees WHERE Department = 'Production';
 
 -- Retrieve all employees with a salary between 50,000 and 100,000 (inclusive)
-SELECT 
-    *
-FROM Employees WHERE Salary > 50000 AND Salary < 100000;
+SELECT * FROM Employees WHERE Salary > 50000 AND Salary < 100000;
 
 
 SELECT * FROM Employees WHERE Salary >= 150000 OR Salary >= 160000;
